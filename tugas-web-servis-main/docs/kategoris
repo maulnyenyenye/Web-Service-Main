@@ -1,0 +1,37 @@
+# Kategoris API Spec
+## create kategoris
+-- Endpoint : post /api/product/:product_id/kategoris
+
+Request Body
+```json
+{
+    Body : "ëletkronik"
+}
+```
+
+Respone body ( success )
+```json
+{
+    data : {
+    Body : "ëletkronik"
+}
+}
+```
+
+Respone body ( failde )
+```json
+{
+    "message":"failed procces"
+}
+```
+
+## Delete kategoris
+-- Endpoint : Delete /api/product/:product_id/kategoris/kategoris_id
+
+Respone Body ( success )
+
+```json
+{
+    "message": "ok"
+}
+```

@@ -1,0 +1,88 @@
+# Product API Spec
+## FindALL Product
+
+-- Endpoint : GET /api/product
+
+Response Body ( success)
+
+```json
+{
+  "data": [
+    {
+      "title": "laptop",
+      "price": "4.000.000",
+      "description": "laptop adalah alat teknologi yang di kalah tren di zaman sekarang, laptop sangat membantu para pekerja untuk menyelesaikan pekerjaan"
+    }
+  ]
+}
+```
+
+respone { failed }
+
+```json 
+{
+  "message": "user not found"
+}
+```
+
+## create-Product
+-- Endpoint : POST /api/product
+Request Body :
+```json
+{
+      "title": "laptop",
+      "price": "4.000.000",
+      "description": "laptop adalah alat teknologi yang di kalah tren di zaman sekarang, laptop sangat membantu para pekerja untuk menyelesaikan pekerjaan"
+    }
+```
+
+Respone Body ( success)
+```json
+{
+      "title": "laptop",
+      "price": "4.000.000",
+      "description": "laptop adalah alat teknologi yang di kalah tren di zaman sekarang, laptop sangat membantu para pekerja untuk menyelesaikan pekerjaan"
+    }
+```
+
+respone Body ( failed )
+```json
+{
+  "message": "user not found"
+}
+```
+
+## Edit Product
+-- Endpoint : PUT /api/product
+Request Body :
+```json
+{
+      "title": "laptop",
+      "price": "4.000.000",
+      "description": "laptop adalah alat teknologi yang di kalah tren di zaman sekarang, laptop sangat membantu para pekerja untuk menyelesaikan pekerjaan"
+    }
+```
+
+Respone Body ( success )
+```json
+{
+      "title": "laptop",
+      "price": "4.000.000",
+      "description": "laptop adalah alat teknologi yang di kalah tren di zaman sekarang, laptop sangat membantu para pekerja untuk menyelesaikan pekerjaan"
+    }
+```
+respone Body ( failed )
+```json
+{
+  "message": "user not found"
+}
+```
+
+## Delete-product
+-- Endpoint : Delete /api/product
+Respone Body ( success )
+```json
+{
+    "message": "ök"
+}
+```

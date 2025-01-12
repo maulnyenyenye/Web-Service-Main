@@ -1,0 +1,81 @@
+# Product API Spec
+## find all user
+
+-- Endpoint : GET /api/User
+
+response Body ( succes)
+
+```json
+{
+  "data": [
+    {
+      "username": "Unwahas",
+      "email": "unwahas@gmail.com",
+      "password": "password"
+    }
+  ]
+}
+```
+response { failed }
+
+```json 
+{
+  "message": "user not found"
+}
+```
+
+# Product API Spec
+## find all user
+
+-- Endpoint : GET /api/User/{id}
+
+response Body ( succes)
+
+```json
+{
+  "data": 
+    {
+      "username": "Unwahas",
+      "email": "unwahas@gmail.com",
+      "password": "password"
+  }
+}
+```
+
+response { failed }
+
+```json 
+{
+  "message": "user not found"
+}
+```
+
+## Update User
+Request Body :
+```json
+ {
+      "username": "Unwahas jaya",
+      "email": "uwhjaya@gmail.com",
+      "password": "password"
+  }
+```
+response Body ( succes)
+
+```json
+{
+  "data": 
+    {
+      "username": "Unwahas",
+      "email": "unwahas@gmail.com",
+      "password": "password"
+  }
+}
+```
+
+response { failed }
+
+```json 
+{
+  "message": "user not found"
+}
+```
